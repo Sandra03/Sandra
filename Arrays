@@ -1,0 +1,30 @@
+package t.pkg6.arrays.ejemplo.pkg2;
+import java.util.*;
+public class T6ArraysEjemplo2 {
+
+   
+    public static void main(String[] args) {
+        int media=0;
+        
+       //creo el array
+        int [] hagoarray= new int[10];
+       
+        //este for se encarga de pedir 10 valores y guardalos en la posicion adecuada
+        for(int cont=0;cont<10;cont++){
+            System.out.println("Introduce un valor");
+             Scanner sc=new Scanner(System.in);
+             hagoarray[cont]=sc.nextInt();
+             
+        }
+        //este for recorre de nuevo las posiciones del array y va gsumando los valores
+        for(int cont=0;cont<10;cont++){
+            media=media+hagoarray[cont]; 
+            
+        }
+        //haces la media de los valores del aray
+        media=media/10;
+        System.out.println("La media es: "+media);
+
+    }
+    
+}
